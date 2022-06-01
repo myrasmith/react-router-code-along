@@ -27,6 +27,11 @@ function App() {
                 path="/lamps"
                 element={<ProductList products={lamps} type={"Lamps"} />}
               />
+              <Route path="/lamps/:id" element={<Product products={lamps} />} />
+              <Route
+                path="/candles/:id"
+                element={<Product products={candles} />}
+              />
               <Route
                 path="/candles"
                 element={<ProductList products={candles} type={"Candles"} />}
